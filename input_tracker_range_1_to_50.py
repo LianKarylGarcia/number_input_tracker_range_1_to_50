@@ -11,7 +11,21 @@ ranges = {range_1: 0, range_2: 0, range_3: 0, range_4: 0, range_5: 0}
 while True: # using loop
     try: # using try and except incase of an error
         num = int(input("Please enter a number between 1 and 50: "))
-    except ValuError:
+
+        # 
+        if num >= 1 and num <= 10:
+            ranges[range_1] += 1
+        elif num >= 11 and num <= 20:
+            ranges[range_2] += 1
+        elif num >= 21 and num <= 30:
+            ranges[range_3] += 1
+        elif num >= 31 and num <= 40:
+            ranges[range_4] += 1
+        elif num >= 41 and num >= 50:
+            ranges[range_5] += 
+        
+    
+    except ValueError:
         break
     
 
