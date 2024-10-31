@@ -5,14 +5,15 @@ range_3 = 21 - 30
 range_4 = 31 - 40
 range_5 = 41 - 50
 
-ranges = {range_1: 0, range_2: 0, range_3: 0, range_4: 0, range_5: 0}
+ranges = {range_1: 0, range_2: 0, range_3: 0, range_4: 0, range_5: 0} # Set a count for all ranges to 0.
 
 # Ask the user for input.
-while True: # using loop
+while True: # loop 1
     try: # using try and except incase of an error
-        num = int(input("Please enter a number between 1 and 50: "))
 
-        # 
+        num = int(input("Please enter a number between 1 and 50: ")) # To ask user for input
+
+        # Using if statements to compare the user's input, based on the ranges, it will add 1 to the respective range count.
         if num >= 1 and num <= 10:
             ranges[range_1] += 1
         elif num >= 11 and num <= 20:
@@ -22,16 +23,22 @@ while True: # using loop
         elif num >= 31 and num <= 40:
             ranges[range_4] += 1
         elif num >= 41 and num >= 50:
-            ranges[range_5] += 
+            ranges[range_5] += 1
+        else:
+            print("Input Invalid.")
+            break
+
+        print(f"1 - 10 = {ranges[range_1]}")
+        print(f"11 - 20 = {ranges[range_2]}")
+        print(f"21 - 30 = {ranges[range_3]}")
+        print(f"31 - 40 = {ranges[range_4]}")
+        print(f"41 - 50 = {ranges[range_5]}")
         
-    
     except ValueError:
         break
     
 
 
 
-# Set a valid number range from 1 to 50.
-# Set a count for all ranges to 0.
-# Count each user input, adding it to the respective range based on the number they input.
-# If the user input is invalid, print "Invalid input" and display the results.
+
+
