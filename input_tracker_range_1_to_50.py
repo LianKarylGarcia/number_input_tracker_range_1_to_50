@@ -32,13 +32,14 @@ while True: # Using loop to ask user for input
             break
         
     except ValueError:
-        break
+        print("Input Invalid. Processing Results...")
+        break # To break the loop if the input is invalid.
 
-    print(f"1 - 10 = {range_1_count}")
-    print(f"11 - 20 = {range_2_count}")
-    print(f"21 - 30 = {range_3_count}")
-    print(f"31 - 40 = {range_4_count}")
-    print(f"41 - 50 = {range_5_count}")
+print(f"1 - 10 = {range_1_count}")
+print(f"11 - 20 = {range_2_count}")
+print(f"21 - 30 = {range_3_count}")
+print(f"31 - 40 = {range_4_count}")
+print(f"41 - 50 = {range_5_count}")
 
 
 
