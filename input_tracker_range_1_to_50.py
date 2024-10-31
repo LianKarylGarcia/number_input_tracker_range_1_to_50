@@ -29,6 +29,7 @@ while True: # Using loop to ask user for input
         elif num >= 41 and num <= 50:
             range_5_count += 1
         else:
+            print("Input Invalid. Processing Results...")
             break
         
     except ValueError:
