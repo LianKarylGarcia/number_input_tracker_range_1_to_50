@@ -5,9 +5,13 @@ range_3 = 21 - 30
 range_4 = 31 - 40
 range_5 = 41 - 50
 
-ranges = {range_1: 0, range_2: 0, range_3: 0, range_4: 0, range_5: 0} # Set a count for all ranges to 0.
+# Set a count for all ranges to 0.
+range_1_count = 0
+range_2_count = 0
+range_3_count = 0
+range_4_count = 0
+range_5_count = 0
 
-# Ask the user for input.
 while True: # loop 1
     try: # using try and except incase of an error
 
@@ -25,17 +29,17 @@ while True: # loop 1
         elif num >= 41 and num >= 50:
             ranges[range_5] += 1
         else:
-            print("Input Invalid.")
+            print("Input Invalid. Processing results...")
             break
-
-        print(f"1 - 10 = {ranges[range_1]}")
-        print(f"11 - 20 = {ranges[range_2]}")
-        print(f"21 - 30 = {ranges[range_3]}")
-        print(f"31 - 40 = {ranges[range_4]}")
-        print(f"41 - 50 = {ranges[range_5]}")
         
     except ValueError:
         break
+
+    print(f"1 - 10 = {ranges[range_1]}")
+    print(f"11 - 20 = {ranges[range_2]}")
+    print(f"21 - 30 = {ranges[range_3]}")
+    print(f"31 - 40 = {ranges[range_4]}") 
+    print(f"41 - 50 = {ranges[range_5]}")
     
 
 
